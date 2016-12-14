@@ -1423,7 +1423,7 @@ cache(function(data, match, sendBadge, request) {
       return;
     }
     try {
-      var version = JSON.parse(buffer).version || 0;
+      var version = JSON.parse(buffer).version;
       var vdata = versionColor(version);
       badgeData.text[1] = vdata.version;
       badgeData.colorscheme = vdata.color;
